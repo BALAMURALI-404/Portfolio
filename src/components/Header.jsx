@@ -19,7 +19,7 @@ return (
                             <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center font-bold text-purple-600 text-xl mr-3">
                                     B
                             </div>
-                            <span className="text-xl font-bold bg-gradient-to-r from-gray-400 to-gray-100 bg-clip-text text-transparent">
+                            <span className="text-xl font-bold bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent">
                                     Balamurali
                             </span>
                     </motion.div>
@@ -69,7 +69,7 @@ return (
                         <motion.button
                         whileTap={{scale:0.7}}
                         onClick={toggleMenu} 
-                        className='text-grey-300'>
+                        className='text-grey-300 hover:text-purple-300'>
                             {isOpen? <FiX className='h-6 w-6'/> : <FiMenu className='h-6 w-6'/>}
                         </motion.button>
                     </div>
@@ -79,10 +79,10 @@ return (
             initial={{opacity:0, height:0}}
             animate={{opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0}}
             transition={{duration:0.3}}
-            className='md:hidden overflow-hidden bg-white dark:bg-gray-900 shadow-lg px-4 py-5 space-y-5'>
+            className='md:hidden overflow-hidden bg-violet-1000 shadow-lg px-4 py-5 space-y-5'>
                 <nav className='flex flex-col space-y-3'>
                     {["Home", "About", "Projects", "Contact"].map((item) => (
-                        <a onClick={toggleMenu} className='text-gray-300 font-medium py-2' key={item} href="#">
+                        <a onClick={toggleMenu} className='text-gray-300 font-medium py-2 hover:text-purple-400' key={item} href="#">
                             {item}
                         </a>
                     ))}
@@ -90,13 +90,13 @@ return (
                 <div className='pt-4 border-t border-gray-200 dark:border-gray-700'>
                     <div className='flex space-x-5'>
                         <a href="#">
-                            <FiGithub className='h-5 w-5 text-gray-300'/>
+                            <FiGithub className='h-5 w-5 text-gray-300 hover:text-purple-400'/>
                         </a>
                         <a href="#">
-                            <FiLinkedin className='h-5 w-5 text-gray-300'/>
+                            <FiLinkedin className='h-5 w-5 text-gray-300 hover:text-purple-400'/>
                         </a>
                         <a href="#">
-                            <SiLeetcode className='h-5 w-5 text-gray-300'/>
+                            <SiLeetcode className='h-5 w-5 text-gray-300 hover:text-purple-400'/>
                         </a>
                     </div>
                 </div>
