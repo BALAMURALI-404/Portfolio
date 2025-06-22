@@ -1,0 +1,22 @@
+a {
+  @apply text-violet-200 
+  font-medium 
+  py-2
+  relative;
+}
+
+a:hover{
+  @apply text-transparent
+  bg-clip-text bg-red-500 
+  transition-colors 
+  py-2
+  duration-300;
+}
+
+.navul{
+  @apply absolute left-0 bottom-0 h-0.5 bg-red-500 w-0 group-hover:w-full transition-all duration-300
+}
+
+.social-icons{
+    @apply h-5 w-5 text-violet-200 hover:text-red-500
+}

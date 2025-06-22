@@ -1,0 +1,10 @@
+
+
+section{
+    @apply h-screen bg-gradient-to-b from-slate-700 to-black flex xl:flex-row flex-col-reverse 
+    items-center justify-between lg:px-24 px-10 relative overflow-hidden
+}
+
+h1{
+    @apply text-3xl md:text-5xl lg:text-7xl font-bold z-10 mb-6 text-violet-200
+}

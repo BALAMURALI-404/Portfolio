@@ -1,24 +1,25 @@
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
+import '../styles/home.css';
 
 const Home = () => {
   return (
-    <section className="h-screen bg-gradient-to-b from-violet-900 to-black flex xl:flex-row flex-col-reverse 
-    items-center justify-between lg:px-24 px-10 relative overflow-hidden">
+    <section>
         {/* Left Section */}
         <div className='z-40 xl:mb-0 mb-[20%]'>
             <motion.h1 
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}
-            transition={{type:"spring", stiffness:40, damping:25, delay:1.3, duration:1.5}}
-            className="text-3xl md:text-5xl lg:text-7xl font-bold z-10 mb-6">
-                Hi,<br/>I'M BALAMURALI <br/>WEB DEVELOPER
+            transition={{type:"spring", stiffness:40, damping:25, delay:1.3, duration:1.5}}>
+                WELCOME,<br/> I'M 
+                <span className='name'> BALAMURALI</span>
+                <br/>WEB DEVELOPER
             </motion.h1>
             <motion.p 
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}  
             transition={{type:"spring", stiffness:40, damping:25, delay:1.8, duration:1.5}}
-            className="text-xl md:text-1xl lg:texr-2xl text-purple-200 max-w-xl">
+            className="text-xl md:text-1xl lg:texr-2xl text-violet-200 max-w-xl">
                 I'm a Mechatronics engineer with a strong passion for software development. I enjoy building creative and efficient solutions 
                 through code, and I'm constantly exploring new technologies to grow as a developer.
             </motion.p>

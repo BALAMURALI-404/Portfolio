@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 body{
   overflow-x: hidden;
@@ -11,4 +13,8 @@ body{
   position: relative;
   background-color: black;
   color: white;
+}
+
+.name{
+    @apply font-kalam text-transparent bg-clip-text bg-gradient-to-br from-pink-600 to-red-300
 }
