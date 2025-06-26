@@ -25,9 +25,14 @@ const Home = () => {
             </motion.p>
         </div>
         {/* Right Section */}
-        <Spline 
-        className='absolute xl:right-[-28%] right-0 top-[-20%] lg:top-0'
-        scene="https://prod.spline.design/RSHtHklCZgxHLlwK/scene.splinecode" />
+        <motion.div
+        initial={{opacity:0, scale:0.1}}
+        animate={{opacity:1, scale:1}}
+        transition={{type:"spring", stiffness:40, damping:25, duration:1.5}}>
+          <Spline 
+          className='absolute xl:right-[-28%] right-0 top-[-20%] lg:top-0'
+          scene="https://prod.spline.design/RSHtHklCZgxHLlwK/scene.splinecode" />
+        </motion.div>
         
     </section>
   )

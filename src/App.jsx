@@ -1,11 +1,13 @@
 import Header from "./components/Header";
+import Education from "./pages/Education";
 import Home from "./pages/Home";
 
 export default function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <Home />
+      <Education/>
     </>
   )
 }
