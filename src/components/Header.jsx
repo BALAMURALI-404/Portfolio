@@ -7,8 +7,14 @@ import '../styles/header.css';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
+
+const navcomp = [{key:"Home",ref:"#Home"}, 
+                {key:"Education",ref:"#Education"},
+                {key:"Skills",ref:"#Skills"},
+                {key:"Projects",ref:"#Projects"},
+                {key:"Contact",ref:"#Contact"}]
 return (
-    <header className="fixed w-full z-50 transition-all duration-300 bg-white opacity-50 backdrop-blur-xl ">
+    <header className="fixed w-full z-50 transition-all duration-300 backdrop-blur-lg">
             <div className="container mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-15">
                     {/* logo */}
                     <motion.div 
@@ -28,21 +34,21 @@ return (
 
                     {/*Desktop navigation */}
                     <nav className="lg:flex hidden space-x-8">
-                            {["Home", "About", "Projects", "Contact"].map((item, index) => (
+                            {navcomp.map((item, index) => (
                                     <motion.a
                                     initial={{opacity:0, y:-20}}
                                     animate={{opacity:1, y:0}}
                                     className="group relative"
                                     transition={{typr:"spring", stiffness:100, damping:20, delay:0.7+index*0.2}}
-                                    key={item}
-                                    href='/'>{item}
+                                    key={index}
+                                    href={item.ref}>{item.key}
                                     <span className="navul"></span>
                                     </motion.a>
                             ))}
                     </nav>
 
                     {/*Social icons*/}
-                    <div className='md:flex hidden items-center space-x-4'>
+                    <div className='lg:flex hidden items-center space-x-4'>
                         <motion.a 
                         initial={{opacity:0, scale:0.1}}
                         animate={{opacity:1, scale:1}}
@@ -67,7 +73,7 @@ return (
                     </div>
 
                     {/*Mobile menu button*/}
-                    <div className="md:hidden flex items-center">
+                    <div className="lg:hidden flex items-center">
                         <motion.button
                         whileTap={{scale:0.7}}
                         onClick={toggleMenu} 
@@ -77,21 +83,23 @@ return (
                     </div>
             </div>
             {/*Mobile navigation*/}
+            {isOpen && (
             <motion.div 
             initial={{opacity:0, height:0}}
-            animate={{opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0}}
+            animate={{opacity: 1, height: "auto"}}
+            exit={{opacity:0, height:0}}
             transition={{duration:0.3}}
-            className='md:hidden overflow-hidden bg-violet-1000 shadow-lg px-4 py-5 space-y-5'>
+            className='lg:hidden overflow-hidden px-4 py-5 space-y-5'>
                 <nav className='flex flex-col space-y-3'>
-                    {["Home", "About", "Projects", "Contact"].map((item) => (
-                        <a onClick={toggleMenu} key={item} href="#">
-                            {item}
+                    {navcomp.map((item,index) => (
+                        <a onClick={toggleMenu} key={index} href={item.ref}>
+                            {item.key}
                         </a>
                     ))}
                 </nav>
-                <div className='pt-4 border-t border-gray-200 dark:border-gray-700'>
+                <div className='pt-4 border-t border-violet-300 '>
                     <div className='flex space-x-5'>
-                        <a href="https://github.com/BALAMURALI-404 " target='_blank'>
+                        <a href="https://github.com/BALAMURALI-404" target='_blank'>
                             <FiGithub className='social-icons'/>
                         </a>
                         <a href="https://www.linkedin.com/in/balamurali12/" target='_blank'>
@@ -103,6 +111,7 @@ return (
                     </div>
                 </div>
             </motion.div>
+            )}
     </header>
 )
 }

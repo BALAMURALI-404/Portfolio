@@ -3,13 +3,13 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 const EduCard = ({ Edu }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#1d1836', color: '#fff' }}
+      contentStyle={{ background: '#1d1836', color: '#fff',  }}
       contentArrowStyle={{ borderRight: '7px solid  #232631' }}
       date={Edu.duration}
       dateClassName='edu-date'
       iconStyle={{ background: Edu.iconbg }}
       icon={
-        <div className='flex justify-center items-center w-10px h-10px'>
+        <div className='flex justify-center items-center w-40px h-40px'>
           <img
             src={Edu.icon}
             alt={Edu.institution}
@@ -27,6 +27,9 @@ const EduCard = ({ Edu }) => {
         )}
         <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
           {Edu.institution}
+        </p>
+        <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
+          {Edu.percentage}
         </p>
       </div>
     </VerticalTimelineElement>

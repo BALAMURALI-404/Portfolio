@@ -22,7 +22,7 @@ const Edu = [
         institution: 'Vedavalli Vidyalaya Sr Sec School',
         degree: 'SSLC',
         duration: '2007 - 2020',
-        percentage: '82.3%',
+        percentage: '80.6%',
         icon: '../images/scl.png',
         iconbg: '#383E56'
     }

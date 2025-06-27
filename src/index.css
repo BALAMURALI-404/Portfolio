@@ -19,3 +19,11 @@ body{
     @apply font-kalam text-transparent bg-clip-text bg-gradient-to-br from-pink-600 to-red-300
 }
 
+
+html {
+  scroll-behavior:smooth;
+}
+
+.heading{
+    @apply text-3xl md:text-5xl lg:text-6xl font-bold flex justify-center text-violet-200 text-left ml-4 sm:ml-8 md:ml-20;
+}

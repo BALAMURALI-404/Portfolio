@@ -1,0 +1,15 @@
+.skill-catagory{
+    @apply w-[350px] h-[40px] flex items-center  shadow-2xl border mt-10 justify-between rounded-full;
+}
+
+.skill-cat-button{
+    @apply px-4 py-2 mx-2 text-white
+}
+
+.skill-cat-button:hover{
+    @apply  transition-colors duration-300 text-red-500
+}
+
+.skill-cat-button.active{
+    @apply text-slate-300 bg-blue-900 py-0.5 rounded-full hover:text-red-500;
+}
