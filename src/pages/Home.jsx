@@ -19,7 +19,7 @@ const Home = () => {
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}  
             transition={{type:"spring", stiffness:40, damping:25, delay:1.8, duration:1.5}}
-            className="text-xl md:text-1xl lg:texr-2xl text-violet-200 max-w-xl">
+            className="text-xl md:text-1xl lg:texr-2xl font-sans text-justify text-violet-200 max-w-xl">
                 I'm a Mechatronics engineer with a strong passion for software development. I enjoy building creative and efficient solutions 
                 through code, and I'm constantly exploring new technologies to grow as a developer.
             </motion.p>

@@ -18,7 +18,7 @@ const EduCard = ({ Edu }) => {
         </div>
       }
     >
-      <div>
+      <div  >
         <h3 className=' lg:text-[24px] font-bold'>{Edu.degree}</h3>
         {Edu.branch && (
           <h4 className='text-white lg:text-[20px] font-bold' style={{ margin: 0 }}>

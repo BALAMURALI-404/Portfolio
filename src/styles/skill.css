@@ -1,5 +1,5 @@
 .skill-catagory{
-    @apply w-[350px] h-[40px] flex items-center  shadow-2xl border mt-10 justify-between rounded-full;
+    @apply w-[350px] h-[40px] flex items-center backdrop-blur-lg bg-black/10 shadow-2xl border mt-10 justify-between rounded-full;
 }
 
 .skill-cat-button{
