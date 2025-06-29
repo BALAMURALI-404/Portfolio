@@ -1,0 +1,19 @@
+.project-filter-bar{
+    @apply w-[350px] h-[40px] flex items-center justify-around rounded-full mt-10 bg-black/10 backdrop-blur-lg border shadow-2xl
+}
+
+.project-filter-button{
+    @apply px-4 py-2 mx-2 text-white
+}
+
+.project-filter-button:hover{
+    @apply text-red-500 transition duration-300
+}
+
+.project-filter-button.active{
+    @apply text-slate-300 bg-gray-800 rounded-full py-0.5
+}
+
+.project{
+    @apply pt-20 min-h-screen flex flex-col items-center bg-gradient-to-b from-neutral-900 to-gray-800
+}

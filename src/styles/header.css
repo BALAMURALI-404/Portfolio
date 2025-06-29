@@ -1,11 +1,11 @@
-a {
+.header-ele {
   @apply text-violet-200 
   font-medium 
   py-2
   relative;
 }
 
-a:hover{
+.header-ele:hover{
   @apply text-transparent
   bg-clip-text bg-red-500 
   transition-colors 

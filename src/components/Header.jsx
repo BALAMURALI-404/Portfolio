@@ -38,7 +38,7 @@ return (
                                     <motion.a
                                     initial={{opacity:0, y:-20}}
                                     animate={{opacity:1, y:0}}
-                                    className="group relative"
+                                    className="group relative header-ele"
                                     transition={{typr:"spring", stiffness:100, damping:20, delay:0.7+index*0.2}}
                                     key={index}
                                     href={item.ref}>{item.key}
@@ -92,7 +92,7 @@ return (
             className='lg:hidden overflow-hidden px-4 py-5 space-y-5'>
                 <nav className='flex flex-col space-y-3'>
                     {navcomp.map((item,index) => (
-                        <a onClick={toggleMenu} key={index} href={item.ref}>
+                        <a className="header-ele" onClick={toggleMenu} key={index} href={item.ref}>
                             {item.key}
                         </a>
                     ))}

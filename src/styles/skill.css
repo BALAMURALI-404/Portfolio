@@ -13,3 +13,7 @@
 .skill-cat-button.active{
     @apply text-slate-300 bg-blue-900 py-0.5 rounded-full hover:text-red-500;
 }
+
+.skills{
+    @apply pt-20 min-h-screen flex flex-col items-center bg-gradient-to-b from-blue-900 to-neutral-900
+}

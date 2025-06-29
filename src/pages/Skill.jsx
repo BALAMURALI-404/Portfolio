@@ -9,16 +9,16 @@ const handleCategoryChange = (newCategory) => {
   setCategory(newCategory);
 }
 return (
-    <div id='Skills' className="pt-16 min-h-screen flex flex-col items-center bg-gradient-to-b from-blue-900 to-black">
+    <div id='Skills' className="skills">
       <motion.h2 
-        className="heading md:mr-20 "
+        className="heading "
         initial={{ opacity: 0, y:20 }}
         whileInView={{ opacity: 1, y: 0 }} 
-        transition={{type:"spring",stiffness: 100, damping:20, delay:0.2,duration:2}}>
+        transition={{type:"spring",stiffness: 100, damping:20, delay:0.8,duration:2}}>
         SKILLS
       </motion.h2>
       {/*Skill Filter Bar*/}
-      <div className="sticky z-20 top-5">
+      <div className="sticky z-20 top-5 md:pl-20">
         <div className="skill-catagory">
         {['Software','All','Mechatronics'].map((tab,index) =>(
             <motion.button 
@@ -43,7 +43,7 @@ return (
               whileInView={{ opacity: 1, x:0,y: 0}}
               transition={{type:"spring",stiffness: 100, damping:20, delay:index*0.1, duration:0.1}}
               key={index}
-              className="flex flex-col items-center p-4 bg-black/20 hover:shadow-red-500 rounded-xl shadow-md text-white"
+              className="flex flex-col items-center p-4 bg-violet-300/10 hover:shadow-red-500 rounded-xl shadow-md text-white"
             >
               <img src={skill.icon} alt={skill.name}  className="w-20 h-20 object-contain"/>
               <p className="mt-2 text-xs">{skill.name}</p>
