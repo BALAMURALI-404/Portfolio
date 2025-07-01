@@ -1,0 +1,19 @@
+.outer-box{
+    @apply relative h-[250px] w-[300px] flex items-center justify-center bg-slate-700/40 rounded-3xl
+}
+
+.image-container{
+    @apply h-[95%] w-[95%] bg-zinc-700 shadow-2xl
+}
+
+.project-name-bg{
+    @apply h-[40px] w-[98%] absolute items-center bg-violet-200 flex justify-center shadow-md bottom-2 rounded-3xl
+}
+
+.project-name{
+    @apply font-sans font-bold text-black px-2 py-1 text-[15px] absolute
+}
+
+.project-link{
+    @apply text-[25px] h-[20%] w-[20%] font-black text-violet-200 absolute top-0 right-1
+}

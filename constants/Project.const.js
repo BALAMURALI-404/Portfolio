@@ -1,14 +1,5 @@
 const projects = [
     {
-        title: "AI-Based Smart Geyser",
-        image: "https://github.com/BALAMURALI-404/Product-Catalog-CMS/raw/main/images/homepage.png",
-        description:
-            "An intelligent water heater system that predicts user patterns using the KNN algorithm to optimize energy usage and prevent overheating.",
-        tags: ["AI", "KNN", "IoT", "Embedded"],
-        link: "#",
-        category: "Mechatronics",
-    },
-    {
         title: "Product Catalog CMS",
         image: "https://github.com/BALAMURALI-404/Product-Catalog-CMS/raw/main/images/homepage.png",
         description:
