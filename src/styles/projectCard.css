@@ -15,5 +15,5 @@
 }
 
 .project-link{
-    @apply text-[25px] h-[20%] w-[20%] font-black text-violet-200 absolute top-0 right-1
+    @apply text-[25px] font-black text-violet-200 absolute top-1 right-6 hover:text-red-500 hover:scale-150
 }

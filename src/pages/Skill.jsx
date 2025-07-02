@@ -9,7 +9,7 @@ const handleCategoryChange = (newCategory) => {
   setCategory(newCategory);
 }
 return (
-    <div id='Skills' className="skills">
+    <div id='Skills' className="skills min-w-96">
       <motion.h2 
         className="heading "
         initial={{ opacity: 0, y:20 }}
