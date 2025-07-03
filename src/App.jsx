@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Education from "./pages/Education";
+import Highlights from "./pages/Highlights";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Skill from "./pages/Skill";
@@ -13,6 +14,7 @@ export default function App() {
       <Education/>
       <Skill/>
       <Project/>
+      <Highlights/>
       <Trial/>
     </>
   )

@@ -12,6 +12,7 @@ const navcomp = [{key:"Home",ref:"#Home"},
                 {key:"Education",ref:"#Education"},
                 {key:"Skills",ref:"#Skills"},
                 {key:"Projects",ref:"#Projects"},
+                {key:"Highlights",ref:"#Highlights"},
                 {key:"Contact",ref:"#Contact"}]
 return (
     <header className="fixed w-full z-50 transition-all duration-300 backdrop-blur-lg">

@@ -11,7 +11,7 @@ const ProjectModel = ({project,onClose}) => {
       exit={{opacity:0,scale:0.5}}
       className="relative bg-gray-900/90 w-[90%] max-w-[500px] p-6 rounded-2xl shadow-2xl" onClick={e => e.stopPropagation()}>
         <button
-          className="absolute top-4 right-6 text-xl text-[30px] text-violet-200 hover:text-red-500 hover:scale-90"
+          className="absolute top-4 right-6 text-xl text-[32px] text-violet-200 hover:text-red-500 hover:scale-90"
           onClick={onClose}
         >
           ×
