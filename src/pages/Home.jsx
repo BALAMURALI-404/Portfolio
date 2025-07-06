@@ -4,7 +4,7 @@ import '../styles/home.css';
 
 const Home = () => {
   return (
-    <section id='Home' className='min-w-96'>
+    <section id='Home' className=' home-page min-w-96'>
         {/* Left Section */}
         <div className='z-40 xl:mb-0 mb-[20%]'>
             <motion.h1 

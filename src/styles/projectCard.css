@@ -1,5 +1,5 @@
 .outer-box{
-    @apply relative h-[250px] w-[300px] flex items-center justify-center bg-slate-700/40 rounded-3xl
+    @apply relative h-[250px] w-[300px] flex items-center justify-center bg-slate-700/40 rounded-3xl;
 }
 
 .image-container{

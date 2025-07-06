@@ -19,5 +19,5 @@
 }
 
 .project{
-    @apply pt-20 min-h-screen  flex flex-col items-center bg-gradient-to-b from-neutral-900 to-gray-800 pb-20
+    @apply pt-20 min-h-screen  flex flex-col items-center bg-black/10 pb-20
 }

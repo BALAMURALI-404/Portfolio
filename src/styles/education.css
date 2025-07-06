@@ -5,5 +5,5 @@
 }
 
 .edu-bg{
-    @apply bg-gradient-to-b from-black to-blue-900
+    @apply bg-black/10
 }

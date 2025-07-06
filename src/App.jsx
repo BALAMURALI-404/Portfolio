@@ -1,3 +1,4 @@
+import BackgroundCanvas from "./components/Background";
 import Header from "./components/Header";
 import Education from "./pages/Education";
 import Highlights from "./pages/Highlights";
@@ -8,14 +9,17 @@ import Trial from "./pages/trial";
 
 export default function App() {
   return (
-    <>
-      <Header/>
-      <Home/>
-      <Education/>
-      <Skill/>
-      <Project/>
-      <Highlights/>
-      <Trial/>
-    </>
+      <div className="relative min-h-screen">
+        <BackgroundCanvas />
+        <main className="relative z-10">
+          <Header/>
+          <Home />
+          <Education/>
+          <Skill />
+          <Project />
+          <Highlights />
+          <Trial/>
+        </main>
+    </div>
   )
 }
