@@ -13,7 +13,7 @@ function Project() {
     const [selectedProject,setSelectedProject] = useState(null);
 
   return (
-    <div id='Projects' className='project min-w-96'>
+    <section id='Projects' className='project min-w-96'>
       <motion.h2 
         className="heading "
         initial={{ opacity: 0, y:20 }}
@@ -49,7 +49,7 @@ function Project() {
           <ProjectModel project={selectedProject} onClose={()=>setSelectedProject(null)}/>
         )}
       </AnimatePresence>
-    </div>
+    </section>
   )
 }
 

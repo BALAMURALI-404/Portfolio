@@ -3,6 +3,7 @@ import { FiGithub, FiLinkedin, FiMenu, FiX } from 'react-icons/fi';
 import { SiLeetcode } from "react-icons/si";
 import { useState } from 'react';
 import '../styles/header.css'; 
+import resume from "../../images/22MTR015_BALAMURALI_B.pdf"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ const navcomp = [{key:"Home",ref:"#Home"},
                 {key:"Projects",ref:"#Projects"},
                 {key:"Highlights",ref:"#Highlights"},
                 {key:"Contact",ref:"#Contact"}]
+
 return (
     <header className="fixed w-full z-50 transition-all duration-300 backdrop-blur-lg">
             <div className="container mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between h-15">
@@ -46,32 +48,17 @@ return (
                                     <span className="navul"></span>
                                     </motion.a>
                             ))}
+                            <motion.div 
+                            className='py-2'
+                            initial={{opacity:0,y:-20}}
+                            animate={{opacity:1,y:0}}
+                            transition={{typr:"spring", stiffness:100, damping:20,delay:2.1}}>
+                                <a className='dcv group relative' href={resume} target='blank'>
+                                    Download CV
+                                    <span className="button-ul"></span>
+                                </a>
+                            </motion.div>
                     </nav>
-
-                    {/*Social icons*/}
-                    <div className='lg:flex hidden items-center space-x-4'>
-                        <motion.a 
-                        initial={{opacity:0, scale:0.1}}
-                        animate={{opacity:1, scale:1}}
-                        transition={{delay:1.3, duration:0.8}}
-                        href="https://github.com/BALAMURALI-404" target='_blank'>
-                            <FiGithub className=" social-icons"/>
-                        </motion.a>
-                        <motion.a 
-                        initial={{opacity:0, scale:0.1}}
-                        animate={{opacity:1, scale:1}}
-                        transition={{delay:1.3, duration:0.8}}
-                        href="https://www.linkedin.com/in/balamurali12/" target='_blank'>
-                            <FiLinkedin className="social-icons"/>
-                        </motion.a>
-                        <motion.a 
-                        initial={{opacity:0, scale:0.1}}
-                        animate={{opacity:1, scale:1}}
-                        transition={{delay:1.3, duration:0.8}} 
-                        href="https://leetcode.com/u/BalamuraliB/" target='_blank'>
-                            <SiLeetcode className="social-icons"/>
-                        </motion.a>
-                    </div>
 
                     {/*Mobile menu button*/}
                     <div className="lg:hidden flex items-center">
@@ -97,6 +84,9 @@ return (
                             {item.key}
                         </a>
                     ))}
+                    <a className='dcv group relative' href={resume} target='blank'>
+                        Download CV
+                    </a>
                 </nav>
                 <div className='pt-4 border-t border-violet-300 '>
                     <div className='flex space-x-5'>

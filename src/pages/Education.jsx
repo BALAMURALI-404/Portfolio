@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function Education() {
   return (
-    <div id="Education" className="edu-bg min-w-96 pt-16 ">
+    <section id="Education" className="edu-bg min-w-96 pt-16 ">
         <motion.h2 
         className="heading lg:mr-10"
         initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ function Education() {
                   })}
               </VerticalTimeline>
           </div>
-    </div>
+    </section>
   )
 }
 

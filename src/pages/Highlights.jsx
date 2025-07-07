@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import Highlight from "../../constants/Highlights.const"
 import {motion} from "framer-motion"
+import "../styles/highlight.css"
 
 function Highlights() {
     const [index,setIndex] = useState(0);
@@ -20,7 +21,7 @@ function Highlights() {
         return () => clearInterval(interval);
     });
   return (
-    <div id="Highlights" className="min-h-screen pt-14 min-w-96 bg-black/10">
+    <section id="Highlights" className="highlight">
       <motion.h2 
       initial={{opacity:0, y:20}}
       whileInView={{opacity:1, y:0}}
@@ -28,15 +29,15 @@ function Highlights() {
       className="heading pb-5">
         HIGHLIGHTS
       </motion.h2>
-      <section className="flex flex-col lg:flex-row items-center justify-center gap-8 px-4 py-8">
+      <div className="highlight-body">
         {/* Certificate Preview */}
         <motion.div 
-        className="w-full lg:w-[70%] flex justify-center "
+        className="cert-preview"
         initial={{opacity:0, x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{type:"spring", stiffness:100, daming:20, delay:0.5}}>
           <div
-            className="w-[90%] md:w-full lg:max-w-[750px] aspect-[1.414/1] relative shadow-2xl rounded-2xl"
+            className="cert"
             style={{
               backgroundImage: `url(${Highlight[index].image})`,
               backgroundSize: "cover",
@@ -55,7 +56,7 @@ function Highlights() {
         </motion.div>
         {/* Description */}
         <motion.div 
-        className="w-full lg:w-[30%] min-h-[500px] flex flex-col justify-center pb-5 items-center bg-white/10 rounded-lg lg:mr-16"
+        className="highlight-description"
         initial={{opacity:0, x:50}}
         whileInView={{opacity:1,x:0}}
         transition={{type:"spring", stiffness:100, daming:20, delay:0.5}}>
@@ -74,14 +75,14 @@ function Highlights() {
             <a
               href={Highlight[index].link}
               target="blank"
-              className="text-[16px] bg-violet-300 text-black font-semibold rounded-md px-2 underline hover:bg-red-500/70"
+              className="view-cert-button"
             >
               VIEW↗
             </a>
           )}
         </motion.div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

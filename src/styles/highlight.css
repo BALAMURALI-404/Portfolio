@@ -1,11 +1,23 @@
-.perspective {
-  perspective: 1000px;
-  position: relative;
+.highlight{
+  @apply min-h-screen pt-14 min-w-96 bg-black/10;
 }
-.face {
-  position: absolute;
-  backface-visibility: hidden;
+
+.highlight-body{
+  @apply flex flex-col lg:flex-row items-center justify-center gap-8 px-4 py-8;
 }
-.rotate-y-180 {
-  transform: rotateY(180deg);
+
+.cert-preview{
+  @apply w-full lg:w-[70%] flex justify-center;
+}
+
+.cert{
+  @apply w-[90%] md:w-full lg:max-w-[750px] aspect-[1.414/1] relative shadow-2xl rounded-2xl;
+}
+
+.highlight-description{
+  @apply w-full lg:w-[30%] min-h-[500px] flex flex-col justify-center pb-5 items-center bg-white/10 rounded-lg lg:mr-16;
+}
+
+.view-cert-button{
+  @apply text-[16px] text-violet-200 font-semibold outline rounded-full px-2 py-1 italic hover:text-red-500;
 }

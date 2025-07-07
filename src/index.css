@@ -16,7 +16,7 @@ body{
 }
 
 .name{
-    @apply font-kalam text-transparent bg-clip-text bg-gradient-to-br from-pink-600 to-red-300
+    @apply font-kalam text-transparent bg-clip-text bg-gradient-to-tr from-red-900 to-rose-400
 }
 
 
