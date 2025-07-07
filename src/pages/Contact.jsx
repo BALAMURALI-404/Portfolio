@@ -37,11 +37,11 @@ return (
             <div className='w-full lg:w-[50%] flex flex-col mt-10 items-center gap-y-5 '>
             {
                 contact_details.map((detail,index) => (
-                    <a className=" w-[80%] max-w-[450px] group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:shadow-red-400 transition-all duration-300" key={index} href={detail.link} target="blank">
-                        <h2 className="text-[40px] text-violet-200 group-hover:text-red-400 duration-300">{detail.logo}</h2>
+                    <a className=" w-[80%] max-w-[450px] border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300" key={index} href={detail.link} target="blank">
+                        <h2 className="text-[40px] group-hover:text-red-500 duration-300">{detail.logo}</h2>
                         <div className=" flex flex-col ">
-                            <h2 className="text-[20px] font-mono text-violet-200 group-hover:text-red-400 duration-300">{detail.medium}</h2>
-                            <h2 className="text-[15px] font-mono text-violet-200 group-hover:text-red-400 duration-300">{detail.username}</h2>
+                            <h2 className="text-[20px] font-mono group-hover:text-red-500 duration-300">{detail.medium}</h2>
+                            <h2 className="text-[15px] font-mono group-hover:text-red-500 duration-300">{detail.username}</h2>
 
                         </div>
                     </a>

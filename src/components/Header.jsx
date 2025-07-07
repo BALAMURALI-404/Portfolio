@@ -26,7 +26,7 @@ return (
                     transition={{type:'spring', stiffness:50, damping:25, delay:0.2, duration:1.2}}
                     className="flex items-center">
                             <a href="/" className='flex items-center justify-center'>
-                                <div className="h-8 w-8 rounded-md bg-gradient-to-br from-pink-600 to-red-300 flex items-center justify-center font-bold text-slate-700 text-xl mr-3">
+                                <div className="h-8 w-8 rounded-md bg-gradient-to-tr from-red-800 to-rose-400 flex items-center justify-center font-extrabold text-black text-xl mr-3">
                                     B
                                 </div>
                                 <span className="text-2xl font-bold name pt-1">

@@ -43,7 +43,7 @@ return (
               whileInView={{ opacity: 1, x:0,y: 0}}
               transition={{type:"spring",stiffness: 100, damping:20, delay:index*0.1, duration:0.1}}
               key={index}
-              className="flex flex-col items-center p-4 bg-violet-300/10 hover:shadow-red-500 rounded-xl shadow-md text-white"
+              className="flex flex-col items-center p-4 bg-violet-300/10 backdrop-blur-sm hover:shadow-red-500 rounded-xl shadow-md text-white"
             >
               <img src={skill.icon} alt={skill.name}  className="w-20 h-20 object-contain"/>
               <p className="mt-2 text-xs">{skill.name}</p>

@@ -60,12 +60,12 @@ function Highlights() {
         initial={{opacity:0, x:50}}
         whileInView={{opacity:1,x:0}}
         transition={{type:"spring", stiffness:100, daming:20, delay:0.5}}>
-          <p className="p-5 text-violet-200 text-justify">{Highlight[index].description}</p>
+          <p className="p-5 text-justify">{Highlight[index].description}</p>
           <div className="flex flex-wrap gap-2 p-4">
             {Highlight[index].topics.map((topic, idx) => (
               <span
                 key={idx}
-                className="bg-violet-200 text-black text-sm rounded-full px-2"
+                className="bg-white text-black text-sm rounded-full px-2"
               >
                 {topic}
               </span>

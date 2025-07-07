@@ -11,20 +11,20 @@ const ProjectModel = ({project,onClose}) => {
       exit={{opacity:0,scale:0.5}}
       className="relative bg-gray-900/90 w-[90%] max-w-[500px] p-6 rounded-2xl shadow-2xl" onClick={e => e.stopPropagation()}>
         <button
-          className="absolute top-4 right-6 text-xl text-[32px] text-violet-200 hover:text-red-500 hover:scale-90"
+          className="absolute top-4 right-6 text-xl text-[32px] hover:text-red-500 hover:scale-90"
           onClick={onClose}
         >
           ×
         </button>
 
-        <h2 className="text-2xl font-bold text-violet-200 mt-3 mb-3 text--500/50">{project.title}</h2>
-        <p className="text-sm text-violet-100 mb-4 text-justify">{project.description || 'No description provided.'}</p>
+        <h2 className="text-2xl font-bold mt-3 mb-3 text--500/50">{project.title}</h2>
+        <p className="text-sm mb-4 text-justify">{project.description || 'No description provided.'}</p>
 
         {/* Optional tags or link */}
         {project.keywords && (
           <div className="flex flex-wrap gap-2 mb-4">
             {project.keywords.map((tag, i) => (
-              <span key={i} className="px-2 py-1 bg-violet-200 font-black text-gray-900/90 rounded-full text-xs">
+              <span key={i} className="px-2 py-1 bg-white font-black text-black rounded-full text-xs">
                 {tag}
               </span>
             ))}
@@ -38,7 +38,7 @@ const ProjectModel = ({project,onClose}) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-violet-200 underline text-sm hover:scale-105 hover:text-sky-500 duration-300"
+            className=" underline text-sm hover:scale-105 hover:text-blue-500 duration-300"
           >
             View Project ↗
           </a>

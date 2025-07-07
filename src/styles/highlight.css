@@ -19,5 +19,5 @@
 }
 
 .view-cert-button{
-  @apply text-[16px] text-violet-200 font-semibold outline rounded-full px-2 py-1 italic hover:text-red-500;
+  @apply text-[16px] font-semibold outline rounded-full px-2 py-1 italic hover:text-red-500;
 }

@@ -25,5 +25,5 @@ html {
 }
 
 .heading{
-    @apply text-5xl lg:text-6xl font-bold flex justify-center text-violet-200 text-left ml-4 sm:ml-8 md:ml-20;
+    @apply text-5xl lg:text-6xl font-bold flex justify-center text-left ml-4 sm:ml-8 md:ml-20;
 }

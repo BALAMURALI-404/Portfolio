@@ -1,5 +1,5 @@
 .header-ele {
-  @apply text-violet-200 
+  @apply 
   font-medium 
   py-2
   relative;
@@ -18,7 +18,7 @@
 }
 
 .social-icons{
-    @apply h-7 w-7 text-violet-200 hover:text-red-500
+    @apply h-7 w-7  hover:text-red-500
 }
 
 .social-panal{
@@ -30,11 +30,11 @@
 }
 
 .button-ul{
-  @apply absolute left-0 bottom-0 h-0.5 bg-violet-300 w-0 group-hover:w-full transition-all duration-300
+  @apply absolute left-0 bottom-0 h-0.5 bg-white w-0 group-hover:w-full transition-all duration-300
 }
 
 .dcv:hover{
-  @apply text-violet-300
+  @apply text-white
 }
 
 

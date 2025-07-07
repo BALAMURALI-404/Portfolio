@@ -6,5 +6,5 @@
 }
 
 h1{
-    @apply text-3xl md:text-5xl lg:text-7xl font-bold z-10 mb-6 text-violet-200
+    @apply text-3xl md:text-5xl lg:text-7xl font-bold z-10 mb-6 
 }

@@ -1,5 +1,5 @@
 .outer-box{
-    @apply relative h-[250px] w-[300px] flex items-center justify-center bg-slate-700/50 rounded-3xl;
+    @apply relative h-[250px] w-[300px] flex items-center justify-center backdrop-blur-sm bg-slate-800/50 rounded-3xl;
 }
 
 .image-container{
@@ -7,7 +7,7 @@
 }
 
 .project-name-bg{
-    @apply h-[40px] w-[98%] absolute items-center bg-violet-200 flex justify-center shadow-md bottom-2 rounded-3xl
+    @apply h-[40px] w-[98%] absolute items-center bg-white flex justify-center shadow-md bottom-2 rounded-3xl
 }
 
 .project-name{
@@ -15,5 +15,5 @@
 }
 
 .project-link{
-    @apply text-[25px] font-black text-violet-200 absolute top-1 right-6 hover:text-red-500 hover:scale-150
+    @apply text-[25px] font-black absolute top-1 right-6 hover:text-red-500 hover:scale-150
 }

@@ -3,7 +3,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 const EduCard = ({ Edu }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#1d1836', color: '#fff',  }}
+      contentStyle={{ background: 'rgba(50,50,50,0.3)', color: '#fff', backdropFilter:'blur(4px)' }}
       contentArrowStyle={{ borderRight: '7px solid  #232631' }}
       date={Edu.duration}
       dateClassName='edu-date'
