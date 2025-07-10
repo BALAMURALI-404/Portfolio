@@ -1,30 +1,17 @@
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
-import { useEffect } from 'react';
+import React from 'react'
 
-function Model() {
-  const gltf = useGLTF('/images/dragon/scene.gltf'); // Ensure this path is public
-  const { animations } = gltf;
-  const { actions, mixer } = useAnimations(animations, gltf.scene);
-
-  useEffect(() => {
-    if (actions && actions[animations[0]?.name]) {
-      actions[animations[0].name]?.play();
-    }
-  }, [actions, animations]);
-
-  return <primitive object={gltf.scene} scale={3} />;
-}
-
-export default function HomeModel() {
+function HomeModel() {
   return (
-    <div className="w-full h-screen bg-white">
-      <Canvas camera={{ position: [5, 5, 5], fov: 35 }}>
-        <ambientLight intensity={0.8} />
-        <directionalLight intensity={1.5} position={[0,0,0]}  />
-        <OrbitControls />
-        <Model />
-      </Canvas>
+    <div className="relative w-full aspect-[4/3] pt-10 bg-neutral-600 rounded-[20px] p-2 shadow-xl">
+      <iframe 
+        src="/mini/index.html"
+        title="Mini Portfolio"
+        className="w-full h-full rounded-[30px]"
+        style={{ border: "none" }}
+      />
     </div>
-  );
+  )
 }
+
+export default HomeModel
+
