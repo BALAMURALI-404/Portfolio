@@ -1,11 +1,15 @@
-
+import { motion } from "framer-motion"
 
 function ContactForm() {
     
   return (
-    <div className='lg:w-[40%] w-[80%] max-w-[600px] flex flex-col items-center bg-gray-800/20 backdrop-blur-sm p-6 rounded-lg shadow-lg'>
+    <motion.div 
+    initial={{opacity:0,x:20}}
+    whileInView={{opacity:1,x:0}}
+    transition={{type:"spring",stiffness:80,damping:20,delay:1.5}}
+    className='lg:w-[40%] w-[80%] max-w-[600px] flex flex-col items-center bg-gray-800/20 backdrop-blur-sm p-6 rounded-lg shadow-lg'>
         <h3 className='text-[32px] font-bold font-mono mb-4'>Quick Mail</h3>
-        <form action="https://formsubmit.co/balamuralib.22mts@kongu.edu.com" method="POST" className='flex flex-col justify-center w-full gap-3'>
+        <form action="https://formsubmit.co/bbalamurali2004@gmail.com" method="POST" className='flex flex-col justify-center w-full gap-3'>
             <div className='flex flex-col'>
                 <label htmlFor="name" className='text-[18px] font-mono  mb-1'>Name</label>
                 <input
@@ -60,7 +64,7 @@ function ContactForm() {
                 Send
             </button>
         </form>
-    </div>
+    </motion.div>
   )
 }
 

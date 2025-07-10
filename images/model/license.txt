@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lost Programmer
+* source:	https://sketchfab.com/3d-models/lost-programmer-43d32e4f459f4857a054579da61bb3d6
+* author:	rivaiamin (https://sketchfab.com/rivaiamin)
+
+Model License:
+* license type:	CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+* requirements:	Author must be credited. Modified versions can not be distributed. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lost Programmer" (https://sketchfab.com/3d-models/lost-programmer-43d32e4f459f4857a054579da61bb3d6) by rivaiamin (https://sketchfab.com/rivaiamin) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
