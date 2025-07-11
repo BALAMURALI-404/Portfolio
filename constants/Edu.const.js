@@ -1,4 +1,5 @@
-
+import kec from "../images/kec.jpg";
+import scl from "../images/scl.png";
 
 const Edu = [
     {
@@ -7,7 +8,7 @@ const Edu = [
         branch:'MECHATRONICS ENGINEERING',
         duration: '2022 - Present',
         percentage: '8.71 CGPA',
-        icon: '../images/kec.jpg',
+        icon: kec,
         iconbg: '#383E56'
     },
     {
@@ -15,7 +16,7 @@ const Edu = [
         degree: 'HSC',
         duration: '2020 - 2022',
         percentage: '82.3%',
-        icon: '../images/scl.png',
+        icon: scl,
         iconbg: '#383E56'
     },
     {
@@ -23,7 +24,7 @@ const Edu = [
         degree: 'SSLC',
         duration: '2007 - 2020',
         percentage: '80.6%',
-        icon: '../images/scl.png',
+        icon: scl,
         iconbg: '#383E56'
     }
 ]

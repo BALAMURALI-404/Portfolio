@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import quote from "../../images/karuthu.png"
+import from from "../../images/from.png"
+import me from "../../images/me.jpg"
 
 export default function ScatteredPhotos() {
   return (
@@ -13,7 +16,7 @@ export default function ScatteredPhotos() {
           transition={{ type:"spring", stiffness:40, damping:25,delay: 0.3,duration:0.3 }}
           className="absolute top-[4%] left-5 -rotate-8 bg-white p-2 rounded-md shadow-xl w-[130px] sm:w-[150px] md:w-[180px]"
         >
-          <img src="/images/karuthu.png" alt="Quote" className="w-full rounded" />
+          <img src={quote} alt="Quote" className="w-full rounded" />
           <span className="text-black font-kalam text-center block py-1">Quote</span>
         </motion.div>
 
@@ -24,7 +27,7 @@ export default function ScatteredPhotos() {
           transition={{ type:"spring", stiffness:40, damping:25,delay: 0.6,duration:0.6 }}
           className="absolute top-[55%] left-[33%] rotate-10 bg-white p-2 rounded-md shadow-xl w-[130px] sm:w-[150px] md:w-[180px]"
         >
-          <img src="/images/from.png" alt="From" className="w-full rounded" />
+          <img src={from} alt="From" className="w-full rounded" />
           <span className="text-black font-kalam text-center block py-1">From</span>
         </motion.div>
 
@@ -35,7 +38,7 @@ export default function ScatteredPhotos() {
           transition={{ type:"spring", stiffness:40, damping:25,delay: 0.9,duration:0.9 }}
           className="absolute top-0 right-[5%] rotate-5 bg-white p-2 rounded-md shadow-xl w-[130px] sm:w-[150px] md:w-[180px]"
         >
-          <img src="/images/me.jpg" alt="Me" className="w-full rounded" />
+          <img src={me} alt="Me" className="w-full rounded" />
           <span className="text-black font-kalam text-center block py-1">Me</span>
         </motion.div>
       </div>
