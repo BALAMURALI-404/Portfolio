@@ -25,7 +25,7 @@ const Home = () => {
             </motion.p>
         </div>
         {/* Right Section */}
-        <div className='relative flex items-center w-full h-1/2 top-20 lg:w-2/5 lg:h-4/5 lg:top-0 lg:right-20'>
+        <div className='relative flex items-center w-full h-1/2 top-5 lg:w-2/5 lg:-top-10 lg:right-20'>
           <PolaroidStack/>
         </div>
     </section>

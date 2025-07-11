@@ -18,7 +18,7 @@ return (
         SKILLS
       </motion.h2>
       {/*Skill Filter Bar*/}
-      <div className="sticky z-20 top-5 md:pl-20">
+      <div className="sticky z-20 top-5 ">
         <div className="skill-catagory">
         {['Software','All','Mechatronics'].map((tab,index) =>(
             <motion.button 
