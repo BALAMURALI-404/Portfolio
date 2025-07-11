@@ -44,7 +44,7 @@ return (
             <div className='w-full lg:w-[50%] flex flex-col mt-10 items-center gap-y-5 '>
             {
                 contact_details.map((detail,index) => (
-                    <motion.a className=" w-[80%] max-w-[450px] border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300"
+                    <motion.a className=" w-[80%] border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300"
                      key={index} href={detail.link} target="blank"
                      initial={{opacity:0,x:-15}}
                      whileInView={{opacity:1,x:0}}
