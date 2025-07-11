@@ -10,7 +10,7 @@ const Home = () => {
             <motion.h1 
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}
-            transition={{type:"spring", stiffness:40, damping:25, delay:0.5, duration:1.5}}>
+            transition={{type:"spring", stiffness:40, damping:25, delay:0.5,duration:0.5}}>
                 WELCOME,<br/> I'M 
                 <span className='name'> BALAMURALI</span>
                 <br/>WEB DEVELOPER
@@ -18,7 +18,7 @@ const Home = () => {
             <motion.p 
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}  
-            transition={{type:"spring", stiffness:40, damping:25, delay:1, duration:1.5}}
+            transition={{type:"spring", stiffness:40, damping:25, delay:1,duration:0.5}}
             className="text-xl md:text-1xl lg:texr-2xl font-sans text-justify  max-w-xl">
                 I'm a Mechatronics engineer with a strong passion for software development. I enjoy building creative and efficient solutions 
                 through code, and I'm constantly exploring new technologies to grow as a developer.

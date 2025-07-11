@@ -48,7 +48,7 @@ return (
                      key={index} href={detail.link} target="blank"
                      initial={{opacity:0,x:-15}}
                      whileInView={{opacity:1,x:0}}
-                     transition={{type:"spring",stiffness:100,damping:20,delay:index*0.2,duration:0.6}}>
+                     transition={{type:"spring",stiffness:100,damping:20,delay:index*0.2,duration:0.8}}>
                         <h2 className="text-[40px] group-hover:text-red-500 duration-300">{detail.logo}</h2>
                         <div className=" flex flex-col ">
                             <h2 className="text-[20px] font-mono group-hover:text-red-500 duration-300">{detail.medium}</h2>

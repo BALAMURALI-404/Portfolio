@@ -25,7 +25,7 @@ function Highlights() {
       <motion.h2 
       initial={{opacity:0, y:20}}
       whileInView={{opacity:1, y:0}}
-      transition={{type:"spring", stiffness: 100, damping:20, delay:0.8, duration:2}}
+      transition={{type:"spring", stiffness: 100, damping:20, delay:0.5, duration:2}}
       className="heading pb-5">
         HIGHLIGHTS
       </motion.h2>
@@ -35,7 +35,7 @@ function Highlights() {
         className="cert-preview"
         initial={{opacity:0, x:-50}}
         whileInView={{opacity:1,x:0}}
-        transition={{type:"spring", stiffness:100, daming:20, delay:0.5}}>
+        transition={{type:"spring", stiffness:100, daming:20, delay:0.5, duration:2}}>
           <div
             className="cert"
             style={{
@@ -59,7 +59,7 @@ function Highlights() {
         className="highlight-description"
         initial={{opacity:0, x:50}}
         whileInView={{opacity:1,x:0}}
-        transition={{type:"spring", stiffness:100, daming:20, delay:0.5}}>
+        transition={{type:"spring", stiffness:100, daming:20, delay:0.5, duration:2}}>
           <p className="p-5 text-justify">{Highlight[index].description}</p>
           <div className="flex flex-wrap gap-2 p-4">
             {Highlight[index].topics.map((topic, idx) => (

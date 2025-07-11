@@ -13,7 +13,7 @@ function Education() {
         className="heading lg:mr-10"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.5 }}>
+        transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.5,duration:0.5}}>
           EDUCATION
         </motion.h2>
           <div className="lg:mt-10 mt-10">
