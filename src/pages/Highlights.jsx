@@ -21,7 +21,7 @@ function Highlights() {
         return () => clearInterval(interval);
     });
   return (
-    <section id="Highlights" className="highlight">
+    <section id="Highlights" className="highlight ">
       <motion.h2 
       initial={{opacity:0, y:20}}
       whileInView={{opacity:1, y:0}}

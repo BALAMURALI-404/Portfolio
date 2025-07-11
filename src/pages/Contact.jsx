@@ -39,12 +39,12 @@ return (
         transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.5 }}>
           Contact
         </motion.h2>
-        <div className='flex flex-col lg:flex-row items-center p-4 gap-7'>
+        <div className='flex flex-col lg:flex-row items-center pl-4 gap-7'>
             {/* left part */}
             <div className='w-full lg:w-[50%] flex flex-col mt-10 items-center gap-y-5 '>
             {
                 contact_details.map((detail,index) => (
-                    <motion.a className=" w-[80%] border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300"
+                    <motion.a className="w-[90%] lg:w-[80%] overflow-y-auto border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300"
                      key={index} href={detail.link} target="blank"
                      initial={{opacity:0,x:-15}}
                      whileInView={{opacity:1,x:0}}
