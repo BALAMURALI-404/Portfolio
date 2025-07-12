@@ -11,7 +11,7 @@ const handleCategoryChange = (newCategory) => {
 return (
     <section id='Skills' className="skills min-w-96">
       <motion.h2 
-        className="heading pr-16 mr-2"
+        className="heading "
         initial={{ opacity: 0, y:20 }}
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{type:"spring",stiffness: 100, damping:20, delay:0.5,duration:1}}
@@ -19,7 +19,7 @@ return (
         SKILLS
       </motion.h2>
       {/*Skill Filter Bar*/}
-      <div className="sticky z-20 top-5 ">
+      <div className="sticky z-20 top-5 md:pl-20">
         <div className="skill-catagory">
         {['Software','All','Mechatronics'].map((tab,index) =>(
             <motion.button 
@@ -48,7 +48,7 @@ return (
               key={index}
               className="flex flex-col items-center p-4 bg-violet-300/10 backdrop-blur-sm hover:shadow-red-500 rounded-xl shadow-md text-white"
             >
-              <img src={skill.icon} alt={skill.name}  className="w-20 h-20 object-contain"/>
+              <img src={skill.icon} loading="lazy" alt={"..."}  className="w-20 h-20 object-contain"/>
               <p className="mt-2 text-xs">{skill.name}</p>
             </motion.div>
           ))}

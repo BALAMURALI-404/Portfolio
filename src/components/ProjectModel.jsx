@@ -31,7 +31,7 @@ const ProjectModel = ({project,onClose}) => {
           </div>
         )}
 
-        <img src={project.image} alt="" className="mb-3 rounded-lg"/>
+        <img src={project.image} loading='lazy' alt="..." className="mb-3 rounded-lg"/>
 
         {project.link && (
           <a

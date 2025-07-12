@@ -13,6 +13,7 @@ const EduCard = ({ Edu }) => {
           <img
             src={Edu.icon}
             alt={Edu.institution}
+            loading='lazy'
             className=' object-scale-down rounded-full'
           />
         </div>
