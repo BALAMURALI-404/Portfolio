@@ -18,7 +18,8 @@ function Project() {
         className="heading "
         initial={{ opacity: 0, y:20 }}
         whileInView={{ opacity: 1, y: 0 }} 
-        transition={{type:"spring",stiffness: 100, damping:20, delay:0.5,duration:1}}>
+        transition={{type:"spring",stiffness: 100, damping:20, delay:0.5,duration:1}}
+        viewport={{ once: true }}>
         PROJECTS
       </motion.h2>
       {/*Projects filter bar */}
@@ -29,6 +30,7 @@ function Project() {
             initial = {{opacity:0, y:-20}}
             whileInView={{opacity:1, y:0}}
             transition={{type:"spring",stiffness:100,damping:25,delay:index*0.4,duration:1.2 }}
+            viewport={{ once: true }}
             key={index} onClick={()=>handleTabChange(cat)}
             className={`project-filter-button ${tab===cat?"active":""}`} >
                 {cat}

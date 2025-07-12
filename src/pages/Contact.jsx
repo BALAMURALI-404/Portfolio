@@ -36,7 +36,8 @@ return (
         className="heading lg:mr-10"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.5 }}>
+        transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.5 }}
+        viewport={{ once: true }}>
           Contact
         </motion.h2>
         <div className='flex flex-col lg:flex-row items-center pl-4 gap-7'>
@@ -46,9 +47,10 @@ return (
                 contact_details.map((detail,index) => (
                     <motion.a className="w-[90%] lg:w-[80%] overflow-y-auto border group flex bg-gray-800/20 backdrop-blur-sm p-4 gap-10 items-center rounded-lg shadow-md hover:border-red-500 transition-all duration-300"
                      key={index} href={detail.link} target="blank"
-                     initial={{opacity:0,x:-15}}
+                     initial={{opacity:0,x:-20}}
                      whileInView={{opacity:1,x:0}}
-                     transition={{type:"spring",stiffness:100,damping:20,delay:index*0.2,duration:0.8}}>
+                     transition={{type:"spring",stiffness:100,damping:20,delay:index*0.2,duration:0.8}}
+                     viewport={{ once: true }}>
                         <h2 className="text-[40px] group-hover:text-red-500 duration-300">{detail.logo}</h2>
                         <div className=" flex flex-col ">
                             <h2 className="text-[20px] font-mono group-hover:text-red-500 duration-300">{detail.medium}</h2>

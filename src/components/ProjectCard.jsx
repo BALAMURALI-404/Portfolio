@@ -7,7 +7,9 @@ const ProjectCard = ({project,index,onClick}) => {
     initial={{opacity:0,x:10,y:10}}
     whileInView={{opacity:1,x:0,y:0}}
     transition={{type:"spring",stiffness:100,damping:20,delay:index*0.3}}
-    className='outer-box'>
+    viewport={{ once: true }}
+    onClick={onClick}
+    className='outer-box group cursor-pointer'>
         <div  
             className='image-container'
             style={{
@@ -17,7 +19,7 @@ const ProjectCard = ({project,index,onClick}) => {
             clipPath: "path('M 0 20 A 20 20 0 0 1 20 0 H 195 Q 210 0 225 20 L 250 45 Q 255 50 265 50 H 280 A 20 20 0 0 1 300 70 V 170 A 20 20 0 0 1 280 190 H 20 A 20 20 0 0 1 0 170 Z')"
             }}> 
         </div>
-        <div className='project-name-bg cursor-pointer hover:bg-red-500/80  transition-colors duration-300' onClick={onClick}>
+        <div className='project-name-bg  group-hover:bg-red-500/80  transition-colors duration-300'>
             <h3 className='project-name'>
             {project.title}
             </h3>

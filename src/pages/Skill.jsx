@@ -11,10 +11,11 @@ const handleCategoryChange = (newCategory) => {
 return (
     <section id='Skills' className="skills min-w-96">
       <motion.h2 
-        className="heading "
+        className="heading pr-16 mr-2"
         initial={{ opacity: 0, y:20 }}
         whileInView={{ opacity: 1, y: 0 }} 
-        transition={{type:"spring",stiffness: 100, damping:20, delay:0.5,duration:1}}>
+        transition={{type:"spring",stiffness: 100, damping:20, delay:0.5,duration:1}}
+        viewport={{ once: true }}>
         SKILLS
       </motion.h2>
       {/*Skill Filter Bar*/}
@@ -26,6 +27,7 @@ return (
             className={`skill-cat-button ${category===tab?'active':''}`}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: index * 0.4, duration:1.2 }}>
               {tab}
             </motion.button>
@@ -42,6 +44,7 @@ return (
               initial={{ opacity: 0, x:20,y:20}}
               whileInView={{ opacity: 1, x:0,y: 0}}
               transition={{type:"spring",stiffness: 100, damping:20, delay:index*0.1, duration:0.5}}
+              viewport={{ once: true }}
               key={index}
               className="flex flex-col items-center p-4 bg-violet-300/10 backdrop-blur-sm hover:shadow-red-500 rounded-xl shadow-md text-white"
             >
