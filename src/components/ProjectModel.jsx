@@ -32,17 +32,22 @@ const ProjectModel = ({project,onClose}) => {
         )}
 
         <img src={project.image} loading='lazy' alt="..." className="mb-3 rounded-lg"/>
-
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" underline text-sm hover:scale-105 hover:text-blue-500 duration-300"
-          >
-            View Project ↗
-          </a>
-        )}
+        <div className='flex justify-evenly'>
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer"
+              className=" underline text-sm hover:scale-105 hover:text-blue-500 duration-300"
+            >
+              View Project ↗
+            </a>
+          )}
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noopener noreferrer"
+              className=" underline text-sm hover:scale-105 hover:text-blue-500 duration-300"
+            >
+              View Demo ↗
+            </a>
+          )}
+        </div>
       </motion.div>
     </div>
   )

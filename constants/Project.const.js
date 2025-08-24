@@ -2,6 +2,7 @@ import apds from "../images/apds.png"
 import pccms from "../images/pccms.png"
 import pf from "../images/pf.png"
 import sasd from "../images/sasd.png"
+import textrovert from "../images/textrovert.png"
 
 const projects = [
     {
@@ -36,7 +37,17 @@ const projects = [
         keywords: ["React", "TailwindCSS", "Framer Motion","Spline"],
         link: "https://github.com/BALAMURALI-404/portfolio",
         category: "Software",
+        demo:"https://balamurali-404-portfolio.netlify.app/",
     },
+    {
+        title: "Textrovert",
+        image: textrovert,
+        description: "A real-time chat application enabling users to communicate instantly. Built with Node.js, Express, and Socket.io for the backend, and React for the frontend. Features include user authentication, private messaging, and dynamic chat rooms with responsive UI design using Daisy-UI.",
+        keywords: ["React", "Node.js", "Express", "Socket.io", "MongoDB", "Chat App", "Daisy-UI", "JWT"],
+        link: "https://github.com/BALAMURALI-404/Textrovert/",
+        category: "Software",
+        demo: "https://textrovert.vercel.app/",
+    }
 ];
 
 export default projects;

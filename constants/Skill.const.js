@@ -16,6 +16,7 @@ import labview from '../images/labview.png';
 import matlab from '../images/matlab.png';
 import github from '../images/github.png';
 import postman from '../images/postman.png';
+import express from '../images/express.png';
 
 const skills = [
   
@@ -29,6 +30,7 @@ const skills = [
   { name: "CSS", type: "Software", icon: css },
   { name: "JavaScript", type: "Software", icon: js },
   { name: "ReactJS", type: "Software", icon: react },
+  { name: "ExpressJS", type: "Software", icon: express },
 
   { name: "MySQL", type: "Software", icon: mysql },
   { name: "MongoDB", type: "Software", icon: mongodb },
