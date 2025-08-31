@@ -5,6 +5,7 @@ import BackgroundCanvas from "./components/Background";
 import Header from "./components/Header";
 import Social_pnal from "./components/Social_pnal";
 import Home from "./pages/Home";
+import BackgroundSmall from './components/BackgroundSmall';
 
 // Lazy loaded pages
 const Education = lazy(() => import('./pages/Education'));
@@ -16,7 +17,8 @@ const Contact = lazy(() => import('./pages/Contact'));
 export default function App() {
   return (
     <div className="relative min-h-screen">
-      <BackgroundCanvas />
+      <div className='hidden md:block'><BackgroundCanvas /></div>
+      <div className='block md:hidden'><BackgroundSmall/></div>
       <main className="relative z-10">
         <Header />
         <Social_pnal />

@@ -1,8 +1,8 @@
-import apds from "../images/apds.png"
-import pccms from "../images/pccms.png"
-import pf from "../images/pf.png"
-import sasd from "../images/sasd.png"
-import textrovert from "../images/textrovert.png"
+import apds from "../public/apds.png"
+import pccms from "../public/pccms.png"
+import pf from "../public/pf.png"
+import sasd from "../public/sasd.png"
+import textrovert from "../public/textrovert.png"
 
 const projects = [
     {

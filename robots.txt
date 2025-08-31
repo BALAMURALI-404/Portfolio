@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://balamurali-404-portfolio.netlify.app/sitemap.xml

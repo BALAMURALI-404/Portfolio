@@ -19,9 +19,9 @@ const Home = () => {
 
 
   return (
-    <section id='Home' className=' home-page pl-10 lg:pl-28 min-w-96'>
+    <section id='Home' className=' home-page pl-10 lg:pl-28 min-w-96 relative'>
         {/* Left Section */}
-        <div className='z-40  xl:mb-0 mb-[20%]'>
+        <div className='z-20 w-full md:w-2/3 xl:mb-0 mb-[20%] '>
             <motion.h1 
             initial={{opacity:0, y:80}}
             animate={{opacity:1, y:0}}
@@ -30,14 +30,24 @@ const Home = () => {
                 <span className='name'> BALAMURALI</span>
                 <br/> <span ref={textRef}></span>
             </motion.h1>
-            <motion.p 
-            initial={{opacity:0, y:80}}
-            animate={{opacity:1, y:0}}  
-            transition={{type:"spring", stiffness:40, damping:25, delay:1,duration:0.5}}
-            className="text-xl md:text-1xl lg:texr-2xl font-sans text-justify  max-w-xl">
-                I'm a Mechatronics engineer with a strong passion for software development. I enjoy building creative and efficient solutions 
-                through code, and I'm constantly exploring new technologies to grow as a developer.
-            </motion.p>
+            <div className='flex gap-8'>
+              <motion.button 
+              onClick={()=>window.location="#Projects"}
+              initial={{opacity:0, y:80}}
+              animate={{opacity:1, y:0}}  
+              transition={{type:"spring", stiffness:40, damping:25, delay:1,duration:0.5}}
+              className="text-xl p-2 text-white border-white border-2 hover:border-red-500 hover:text-red-500 rounded-lg  bg-gray-600/20 backdrop-blur-sm font-mono text-justify">
+                  See My Works
+              </motion.button>
+              <motion.button 
+              onClick={()=>window.location="#Contact"}
+              initial={{opacity:0, y:80}}
+              animate={{opacity:1, y:0}}  
+              transition={{type:"spring", stiffness:40, damping:25, delay:1,duration:0.5}}
+              className="text-xl p-2 text-white border-white border-2 hover:border-red-500 hover:text-red-500 rounded-lg bg-gray-600/20 backdrop-blur-sm font-mono text-justify">
+                  Contact Me
+              </motion.button>
+            </div>
         </div>
         {/* Right Section */}
         <div className='relative flex items-center w-full h-1/2 top-5 lg:w-2/5 lg:-top-10 lg:right-20'>

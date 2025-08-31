@@ -3,7 +3,7 @@ import { FiGithub, FiLinkedin, FiMenu, FiX } from 'react-icons/fi';
 import { SiLeetcode } from "react-icons/si";
 import { useState } from 'react';
 import '../styles/header.css'; 
-import resume from "../../images/22MTR015_BALAMURALI_B.pdf"
+import resume from "../../public/22MTR015_BALAMURALI_B.pdf"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);

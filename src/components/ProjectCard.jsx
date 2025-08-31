@@ -21,7 +21,7 @@ const ProjectCard = ({project,index,onClick}) => {
         </div>
         <div className='project-name-bg  group-hover:bg-red-500/80  transition-colors duration-300'>
             <h3 className='project-name'>
-            {project.title}
+              {project.title}
             </h3>
         </div>
         <a href={project.link} target="blank" className="project-link">↗</a>

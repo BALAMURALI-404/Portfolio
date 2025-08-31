@@ -1,6 +1,6 @@
-import mdbcert from "../images/mdbcert.png";
-import hcjcert from "../images/hcjcert.jpg";
-import ehcert from "../images/ehcert.jpg"
+import mdbcert from "../public/mdbcert.png";
+import hcjcert from "../public/hcjcert.jpg";
+import ehcert from "../public/ehcert.jpg"
 
 const Highlight = [
   {

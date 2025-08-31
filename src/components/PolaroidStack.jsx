@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import me from "../../images/me.jpg"
+import me from "../../public/me.jpg"
 
 export default function ScatteredPhotos() {
   return (

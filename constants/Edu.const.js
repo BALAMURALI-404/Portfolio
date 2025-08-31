@@ -1,5 +1,5 @@
-import kec from "../images/kec.jpg";
-import scl from "../images/scl.png";
+import kec from "../public/kec.jpg";
+import scl from "../public/scl.png";
 
 const Edu = [
     {
